@@ -125,20 +125,6 @@ h2 {
 .tags {
 	display: flex;
 }
-.tags div , .tag {
-	
-	color: #898989;
-	font-size: 12px;
-	border-radius: 5px;
-	min-width: 50px;	
-	padding: 5px;
-	text-align: center;
-	margin-top: 10px;
-	margin-right: 10px;
-
-
-
-}
 .yellow {
 	background-color: #F1FFB9;
 }

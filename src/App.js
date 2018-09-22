@@ -36,48 +36,13 @@ class App extends Component {
                  effect="hover" 
              tags={[{label:"js" , color :"yellow" },{label:"react" , color : "light-blue" }]}
              />
-             
+
               </ul>
             </div>
             <div className="section">
               <h2>Playground / Blog</h2>
               <ul className="blog">
-                <li>
-                  <p className="title">creating an Html5 canvas custom rendrer with react reconciliation
-                  </p>
-                  <p className="timestamp">18-08-2018</p>
-                  <a href="#">Read more</a>
-                </li>
-                <li>
-                  <p className="title">creating a template framework generator
-                  </p>
-                  <p className="timestamp">18-08-2018</p>
-                  <a href="#">Read more</a>
-                </li>
-                <li>
-                  <p className="title">creating a terminal based personal website
-                  </p>
-                  <p className="timestamp">18-08-2018</p>
-                  <a href="#">Read more</a>
-                </li>
-                <li>
-                  <p className="title">creating a custom rendrer with react reconciliation
-                  </p>
-                  <p className="timestamp">18-08-2018</p>
-                  <a href="#">Read more</a>
-                </li>
-                <li>
-                  <p className="title">creating a WebMethods DocumentType generator</p>
-                  <p className="timestamp">18-08-2018</p>
-                  <a href="#">Read more</a>
-                </li>
-
-                <li>
-                  <p className="title">creating a custom webMethods mapper</p>
-                  <p className="timestamp">18-08-2018</p>
-                  <a href="#">Read more</a>
-                </li>
-
+                
               </ul>
             </div>
             <div className="section">
