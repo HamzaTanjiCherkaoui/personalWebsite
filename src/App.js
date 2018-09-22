@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Header from './components/header/Header';
+import Card from './components/card/Card';
 import logo from './logo.png';
 import './App.css';
 
@@ -28,25 +29,14 @@ class App extends Component {
             <div className="section">
               <h2>Work</h2>
               <ul className="no-padding">
-                <li className="card hover">
-                  <a href="projectDetails.html">
-                    <div className="image red"></div>
-                  </a>
-                  <div className="details">
-                    <a href="projectDetails.html">
-                      <div className="label">Shortcuts.io</div>
-                      <div className="description">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
-                      <div className="tags">
-                        <div className="js">js</div>
-                        <div className="react">react</div>
-                      </div>
-                    </a>
-                    <div>
-                      <a href="projectDetails.html"></a>
-                    </div>
-                  </div>
-                </li>
 
+             <Card 
+                title="Shortcut.io"
+                subTitle="Lorem ipsum dolor sit amet, consectetur adipisicing."
+                 effect="hover" 
+             tags={[{label:"js" , color :"yellow" },{label:"react" , color : "light-blue" }]}
+             />
+             
               </ul>
             </div>
             <div className="section">

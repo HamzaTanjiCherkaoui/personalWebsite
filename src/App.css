@@ -125,7 +125,7 @@ h2 {
 .tags {
 	display: flex;
 }
-.tags div {
+.tags div , .tag {
 	
 	color: #898989;
 	font-size: 12px;
@@ -139,10 +139,10 @@ h2 {
 
 
 }
-.js {
+.yellow {
 	background-color: #F1FFB9;
 }
-.react {
+.light-blue {
 	background-color: #DFF4FF
 }
 a {

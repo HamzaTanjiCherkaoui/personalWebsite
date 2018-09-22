@@ -4,18 +4,18 @@ import './Header.css';
 const Header = ({rightNav ,logo,title, subTitle, additionalDetails}) => {
     return (
         <React.Fragment>
-            <div class="header">
+            <div className="header">
                 <div>
                     {rightNav}
                 </div>
             </div>
-            <div class="brand">
-                {logo && <img src={logo} class="logo"/>}
+            <div className="brand">
+                {logo && <img src={logo} className="logo"/>}
                 <h1>
                     {title}
-                    <span class="white">
+                    <span className="white">
                         |</span>
-                    <span class="light">{subTitle}
+                    <span className="light">{subTitle}
                         {additionalDetails}
                     </span>
                 </h1>
