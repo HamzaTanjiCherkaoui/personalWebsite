@@ -3,7 +3,7 @@ import Header from './components/header/Header';
 import Card from './components/card/Card';
 import logo from './logo.png';
 import './App.css';
-import PostsList from './components/postsList/PostsList';
+import PostsList from './containers/postsList/PostsList';
 import posts from './posts';
 
 class App extends Component {

@@ -1,6 +1,6 @@
 import React from 'react';
 import './PostsList.css';
-import PostsListItem from '../postsListItem/PostsListItem';
+import PostsListItem from '../../components/postsListItem/PostsListItem';
 
 const PostsList = ({posts}) => {
     return (
