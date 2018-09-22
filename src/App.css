@@ -137,6 +137,7 @@ a {
 .image img {
 	width : 100%;
 	border-radius: 5px;
+	box-sizing: border-box;
 
 }
 .purple {
@@ -195,4 +196,8 @@ a {
 .contact li a  {
 	color : #444;
 	font-size: 20px;
+}
+
+.brand span, .brand i  {
+	margin-left : 5px;
 }

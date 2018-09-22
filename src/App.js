@@ -4,22 +4,14 @@ import Card from './components/card/Card';
 import logo from './logo.png';
 import './App.css';
 import PostsList from './components/postsList/PostsList';
+import posts from './posts';
 
 class App extends Component {
   render() {
-    const posts = [
-      {title : "Creating An Html5 Canvas Custom Rendrer With React Reconciliation" , timestamp : "21-09-2018"},
-      {title : "Creating A Template Framework Generator" , timestamp : "21-09-2018"},
-      {title : "Creating A Terminal Based Personal Website" , timestamp : "21-09-2018"},
-      {title : "Creating A Custom Rendrer With React Reconciliation" , timestamp : "21-09-2018"},
-      {title : "Creating A WebMethods DocumentType Generator" , timestamp : "21-09-2018"},
-      {title : "Creating A Custom WebMethods Mapper" , timestamp : "21-09-2018"},
-    ];
+    
     return (
       <React.Fragment>
-
         <div className="wrapper">
-
           <Header
             logo
             ={logo}
@@ -55,26 +47,14 @@ class App extends Component {
             <div className="section">
               <h2>Resume</h2>
               <ul className="no-padding">
-                <li className="card ">
-                  <a href="">
-                    <div className="image">
-                      <img src="https://avatars0.githubusercontent.com/u/2933736?s=460&v=4"/></div>
-                  </a>
-                  <div className="details">
-                    <a href="projectDetails.html">
-                      <div className="label">Hamza Tanji Cherkaoui</div>
-
-                      <div className="description">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
-                      <div className="tags">
-                        <div className="js">js</div>
-                        <div className="react">react</div>
-                      </div>
-                    </a>
-                    <div>
-                      <a href="projectDetails.html"></a>
-                    </div>
-                  </div>
-                </li>
+              <Card 
+              title="Hamza Tanji Cherkaoui"
+              subTitle="Lorem ipsum dolor sit amet, consectetur adipisicing."
+              image = {
+                <img src="https://avatars0.githubusercontent.com/u/2933736?s=460&v=4"/>
+              }
+           tags={[{label:"js" , color :"yellow" },{label:"react" , color : "light-blue" }, {label:"webMethods",color:"light-blue"}]}
+           />
 
               </ul>
             </div>
