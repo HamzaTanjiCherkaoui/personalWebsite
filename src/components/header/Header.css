@@ -1,0 +1,22 @@
+.header {
+	align-self: flex-end;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	padding-right: 20px;	
+
+}
+.logo {
+	width : 39px;
+
+}
+.brand {
+	width : 1200px;	
+	display: flex;
+	align-items: center;
+	align-self: center;
+
+}
+.brand h1 {
+	margin-left: 10px;
+}
