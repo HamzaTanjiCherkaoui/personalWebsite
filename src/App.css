@@ -73,23 +73,6 @@ h2 {
 	/*padding : 0;*/
 	margin : 0;
 }
-.card {
-	background-color: #fff;
-	padding: 10px;
-	box-shadow: 5px 5px 40px 5px rgba(222,222,222,0.5);	
-	border-radius: 5px;
-	display: flex;
-	justify-content: space-around;
-	transition : transform .3s ease;
-	margin-bottom: 10px;
-}
-.card .image {
-	width : 50px;
-	height: 50px;
-	border-radius: 5px;
-	align-self: center;
-	box-sizing: border-box;
-}
 .image {
 	width : 50px;
 	height: 50px;
@@ -101,24 +84,8 @@ h2 {
 	background-color: #FF6161;
 	color : #fff !important;
 }
-.card .details {
-	width: 80%;
-	display: flex;
-	flex-direction: column;
-
-}
-.card .details .label {
-	font-weight: 800;
-	color : #5C5C5C;
-	margin-bottom: 10px;
-}
-.card .details .description {
-	font-size: 12px;
-	color : #898989;
-	font-family: 'Lato',sans-serif;
-
-}
 .hover:hover {
+	cursor: pointer;
 	transform : scale(1.013);
 	box-shadow: 5px 5px 25px 0px rgba(46,61,73,0.12);
 }
@@ -150,41 +117,8 @@ a {
 .orange {
 	background-color: #FDA65F;
 }
-.blog {
-	background-color: #fff;
-	padding: 20px;
-	box-shadow: 5px 5px 40px 5px rgba(222,222,222,0.5);	
-	border-radius: 5px;
-	/*display: flex;*/
-	justify-content: space-around;
-	transition : transform .3s ease;
-	margin-bottom: 10px;	
-}
 .no-padding {
 	padding: 0;
-}
-.blog .title {
-	text-transform: capitalize;
-	font-weight: 800;
-	color: #5C5C5C;
-}
-.blog .timestamp {
-	color :#dadada;
-	font-size: 12px;
-}
-.blog  li {
-	display: flex;
-	flex-direction: column;
-	border-bottom: 1px solid #fafafa;
-	padding-bottom: 10px;
-	padding-top: 10px;
-}
-.blog a {
-	align-self: flex-end;
-
-}
-.blog p {
-	margin: 2px;
 }
 .contact {
 	list-style: none;

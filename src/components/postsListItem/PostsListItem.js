@@ -12,3 +12,4 @@ const PostsListItem = ({title, timestamp , onReadMore}) => {
 
     )
 }
+export default PostsListItem;

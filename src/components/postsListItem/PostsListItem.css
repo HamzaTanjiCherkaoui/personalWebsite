@@ -1,0 +1,18 @@
+.blog .title {
+	text-transform: capitalize;
+	font-weight: 800;
+	color: #5C5C5C;
+}
+.blog .timestamp {
+	color :#dadada;
+	font-size: 12px;
+}
+.blog a {
+    align-self: flex-end;
+    color : rgba(0,100,190);
+    cursor: pointer;
+
+}
+.blog p {
+	margin: 2px;
+}

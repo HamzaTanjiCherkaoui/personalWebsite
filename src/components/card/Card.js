@@ -1,4 +1,5 @@
 import React from 'react';
+import './Card.css';
 import Tag from '../tag/Tag';
 const Card = ({title, subTitle, effect, tags, onClick}) => {
     return (

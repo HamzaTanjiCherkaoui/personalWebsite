@@ -1,0 +1,18 @@
+.blog {
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 5px 5px 40px 5px rgba(222,222,222,0.5);	
+	border-radius: 5px;
+	/*display: flex;*/
+	justify-content: space-around;
+	transition : transform .3s ease;
+	margin-bottom: 10px;	
+}
+
+.blog  li {
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid #fafafa;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}

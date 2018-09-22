@@ -3,9 +3,18 @@ import Header from './components/header/Header';
 import Card from './components/card/Card';
 import logo from './logo.png';
 import './App.css';
+import PostsList from './components/postsList/PostsList';
 
 class App extends Component {
   render() {
+    const posts = [
+      {title : "Creating An Html5 Canvas Custom Rendrer With React Reconciliation" , timestamp : "21-09-2018"},
+      {title : "Creating A Template Framework Generator" , timestamp : "21-09-2018"},
+      {title : "Creating A Terminal Based Personal Website" , timestamp : "21-09-2018"},
+      {title : "Creating A Custom Rendrer With React Reconciliation" , timestamp : "21-09-2018"},
+      {title : "Creating A WebMethods DocumentType Generator" , timestamp : "21-09-2018"},
+      {title : "Creating A Custom WebMethods Mapper" , timestamp : "21-09-2018"},
+    ];
     return (
       <React.Fragment>
 
@@ -41,9 +50,7 @@ class App extends Component {
             </div>
             <div className="section">
               <h2>Playground / Blog</h2>
-              <ul className="blog">
-                
-              </ul>
+              <PostsList posts={posts} />
             </div>
             <div className="section">
               <h2>Resume</h2>
