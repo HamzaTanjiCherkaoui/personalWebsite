@@ -4,7 +4,7 @@ import Card from './components/card/Card';
 import logo from './logo.png';
 import './App.css';
 import PostsList from './containers/postsList/PostsList';
-import posts from './posts';
+import posts from './seeds/posts';
 
 class App extends Component {
   render() {
