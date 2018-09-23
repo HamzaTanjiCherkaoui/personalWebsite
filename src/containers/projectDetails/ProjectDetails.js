@@ -6,23 +6,30 @@ import PostsList from '../../components/postsList/PostsList';
 import posts from '../../seeds/posts';
 
 import ProjectsList from '../../containers/projectsList/ProjectsList';
-import projectDetails from '../../seeds/projectDetails';
+import API from '../../seeds/projectDetails';
 import ProjectIssues from '../../containers/projectIssues/ProjectIssues';
 
 class ProjectDetails extends Component {
      
 
     render() {
+        const {match} = this.props;
+        const projectId =match.params.topicId;
+        const projectDetails = API.get(projectId);
+        if(!projectDetails)
+        return(
+            <React.Fragment> project not found </React.Fragment>
+        )
         return(
         <React.Fragment>
-        {this.renderHeader()}
+        {this.renderHeader(projectDetails)}
       <div className="main">
         <div className="section">
         <h2>main idea / inspiration </h2>
         <ul className="no-padding">
             <li className="card">        
-                    <div className="main-idea">
-                        {projectDetails.idea}
+                    <div className="main-idea" v dangerouslySetInnerHTML={{ __html: projectDetails.idea }}>
+                        
                         </div>
                     </li>
         </ul>
@@ -40,12 +47,13 @@ class ProjectDetails extends Component {
         )
     }
 
-    renderHeader() {
+    renderHeader({title,subTitle,status,github}) {
+        
         return (
             <Header
             logoColor="red"
-            title={projectDetails.title}
-            subTitle={projectDetails.subTitle}
+            title={title}
+            subTitle={subTitle}
             rightNav=
                       { <ul className="contact">
                       <li> <a href=""> <i className="fas fa-at"></i> </a> </li> 
@@ -55,8 +63,8 @@ class ProjectDetails extends Component {
     
             additionalDetails= {
                 <React.Fragment>
-                <span className="green-color">{projectDetails.status}</span>
-            <span> <a href={projectDetails.github}><i className="repo fab fa-github"></i></a></span>
+                <span className="green-color">{status}</span>
+            <span> <a href={github}><i className="repo fab fa-github"></i></a></span>
             </React.Fragment>
          }/>
         )

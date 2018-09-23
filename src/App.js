@@ -14,7 +14,7 @@ class App extends Component {
         <Route exact path="/projectDetails/:topicId" component={ProjectDetails}/>
                   </div>
                   <div className="footer">
-                  Copyrights - 2018
+                  Copyrights - {(new Date()).getFullYear() }
                 </div>
       </React.Fragment>
       </Router>
