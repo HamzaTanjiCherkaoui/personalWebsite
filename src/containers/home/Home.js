@@ -2,9 +2,10 @@ import React, {Component} from 'react';
 import Header from '../../components/header/Header';
 import Card from '../../components/card/Card';
 import logo from '../../logo.png';
-
 import PostsList from '../../components/postsList/PostsList';
 import posts from '../../seeds/posts';
+
+import ProjectsList from '../../containers/projectsList/ProjectsList';
 
 class Home extends Component {
 
@@ -12,31 +13,20 @@ class Home extends Component {
         return(
         <React.Fragment>
         {this.renderHeader()}
-       
       <div className="main">
         <div className="section">
           <h2>Work</h2>
           <ul className="no-padding">
-                <Card 
-                    title="Shortcut.io"
-                    subTitle="Lorem ipsum dolor sit amet, consectetur adipisicing."
-                    effect="hover" 
-                tags={[{label:"js" , color :"yellow" },{label:"react" , color : "light-blue" }]}
-                />
+                <ProjectsList />
           </ul>
         </div>
-
         <div className="section">
-
           <h2>Playground / Blog</h2>
           <PostsList posts={posts} />
-
         </div>
         <div className="section">
-          
           <h2>Resume</h2>
           <ul className="no-padding">
-
                 <Card 
                 title="Hamza Tanji Cherkaoui"
                 subTitle="Lorem ipsum dolor sit amet, consectetur adipisicing."
@@ -45,19 +35,15 @@ class Home extends Component {
                 }
                 tags={[{label:"js" , color :"yellow" },{label:"react" , color : "light-blue" }, {label:"webMethods",color:"light-blue"}]}
             />
-
           </ul>
-
         </div>
       </div>
-      
       </React.Fragment>
         )
     }
 
     renderHeader() {
         return (
-
             <Header
             logo
             ={logo}
@@ -71,7 +57,6 @@ class Home extends Component {
                       </ul> }
     
             additionalDetails={<i className = "fas fa-map-marker-alt" > </i>}/>
-    
         )
     }
 }

@@ -1,12 +1,12 @@
 import React from 'react';
 import './Card.css';
 import Tag from '../tag/Tag';
-const Card = ({title, subTitle, image, effect, tags, onClick}) => {
+const Card = ({title, subTitle, logoColor, image, effect, tags, onClick}) => {
     return (
         <React.Fragment>
         <a onClick={onClick}>
             <li className={`card ${effect}`}>
-                    <div className={`image red `}>
+                    <div className={`image ${logoColor} `}>
                     {image}
                     </div>
                     <div className="details">
