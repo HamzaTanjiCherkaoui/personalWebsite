@@ -9,7 +9,7 @@ console.log(process.env.PUBLIC_URL);
     return (
 
       <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <React.Fragement >
+      <React.Fragment >
         <div className="wrapper">
         <Route exact path="/" component={Home}/>
         <Route exact path="/projectDetails/:topicId" component={ProjectDetails}/>
@@ -17,7 +17,7 @@ console.log(process.env.PUBLIC_URL);
                   <div className="footer">
                   Copyrights - {(new Date()).getFullYear() }
                 </div>
-      </React.Fragement>
+      </React.Fragment>
       </BrowserRouter>
     );
   }
