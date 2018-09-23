@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 
-const Header = ({rightNav ,logo,title, subTitle, additionalDetails}) => {
+const Header = ({rightNav ,logo,logoColor,title, subTitle, additionalDetails}) => {
     return (
         <React.Fragment>
             <div className="header">
@@ -11,6 +11,7 @@ const Header = ({rightNav ,logo,title, subTitle, additionalDetails}) => {
             </div>
             <div className="brand">
                 {logo && <img src={logo} className="logo"/>}
+                {logoColor && <div className={`image ${logoColor}`}></div>}
                 <h1>
                     {title}
                     <span className="white">

@@ -21,7 +21,7 @@ class ProjectDetails extends Component {
         <h2>main idea / inspiration </h2>
         <ul className="no-padding">
             <li className="card">        
-                    <div class="main-idea">
+                    <div className="main-idea">
                         {projectDetails.idea}
                         </div>
                     </li>
@@ -33,7 +33,7 @@ class ProjectDetails extends Component {
         </div>
         <div className="section">
         <h2>Ressources and Articles </h2>
-          
+        <PostsList posts={posts} />
         </div>
       </div>
       </React.Fragment>
@@ -43,10 +43,9 @@ class ProjectDetails extends Component {
     renderHeader() {
         return (
             <Header
-            logo
-            ={logo}
-            title="Shortcuts.io"
-            subTitle="Lorem ipsum dolor sit."
+            logoColor="red"
+            title={projectDetails.title}
+            subTitle={projectDetails.subTitle}
             rightNav=
                       { <ul className="contact">
                       <li> <a href=""> <i className="fas fa-at"></i> </a> </li> 
@@ -56,8 +55,8 @@ class ProjectDetails extends Component {
     
             additionalDetails= {
                 <React.Fragment>
-                <span className="green-color">Live</span>
-            <span> <a href="#"><i className="repo fab fa-github"></i></a></span>
+                <span className="green-color">{projectDetails.status}</span>
+            <span> <a href={projectDetails.github}><i className="repo fab fa-github"></i></a></span>
             </React.Fragment>
          }/>
         )

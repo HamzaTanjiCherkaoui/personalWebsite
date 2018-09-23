@@ -8,7 +8,7 @@ export default class ProjectIssues extends Component {
       <React.Fragment>
         {projectIsssues.map(projectIsssue=>{
             return (
-                <Card key={projectIsssue.issue} title={projectIsssue.issue} tags={[projectIsssue.tag]}/>
+                <Card key={projectIsssue.issue} title={projectIsssue.issue} effect="hover" tags={[projectIsssue.tag]}/>
             )
         })}
       </React.Fragment>
