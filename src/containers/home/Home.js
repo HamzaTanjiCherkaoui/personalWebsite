@@ -31,7 +31,7 @@ class Home extends Component {
                 title="Hamza Tanji Cherkaoui"
                 subTitle="Lorem ipsum dolor sit amet, consectetur adipisicing."
                 image = {
-                    <img src="https://avatars0.githubusercontent.com/u/2933736?s=460&v=4"/>
+                    <img src="https://avatars0.githubusercontent.com/u/2933736?s=460&v=4" alt="profil"/>
                 }
                 tags={[{label:"js" , color :"yellow" },{label:"react" , color : "light-blue" }, {label:"webMethods",color:"light-blue"}]}
             />

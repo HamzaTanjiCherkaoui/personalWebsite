@@ -1,11 +1,8 @@
 import React, {Component} from 'react';
 import Header from '../../components/header/Header';
-import Card from '../../components/card/Card';
-import logo from '../../logo.png';
 import PostsList from '../../components/postsList/PostsList';
 import posts from '../../seeds/posts';
 
-import ProjectsList from '../../containers/projectsList/ProjectsList';
 import API from '../../seeds/projectDetails';
 import ProjectIssues from '../../containers/projectIssues/ProjectIssues';
 

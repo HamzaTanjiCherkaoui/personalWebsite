@@ -10,7 +10,7 @@ const Header = ({rightNav ,logo,logoColor,title, subTitle, additionalDetails}) =
                 </div>
             </div>
             <div className="brand">
-                {logo && <img src={logo} className="logo"/>}
+                {logo && <img src={logo} className="logo" alt="logo"/>}
                 {logoColor && <div className={`image ${logoColor}`}></div>}
                 <h1>
                     {title}
