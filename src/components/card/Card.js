@@ -1,10 +1,10 @@
 import React from 'react';
 import './Card.css';
 import Tag from '../tag/Tag';
-const Card = ({title, subTitle, logoColor, image, effect, tags, onClick}) => {
+const Card = ({title, subTitle, logoColor, image, effect, tags}) => {
     return (
         <React.Fragment>
-        <a onClick={onClick}>
+        
             <li className={`card ${effect}`}>
                     <div className={`image ${logoColor} `}>
                     {image}
@@ -21,7 +21,7 @@ const Card = ({title, subTitle, logoColor, image, effect, tags, onClick}) => {
                         </div>
                     </div>
             </li>
-            </a>
+            
         </React.Fragment>
     );
 }

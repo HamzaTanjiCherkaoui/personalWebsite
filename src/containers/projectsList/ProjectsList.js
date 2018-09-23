@@ -8,8 +8,8 @@ export default class ProjectsList extends Component {
       <React.Fragment>
         {projects.map(project => {
             return(
-                <Link to={`/projectDetails/${project.id}`}>
-                <Card  key={project.id}{...project} effect="hover" />   
+                <Link to={`/projectDetails/${project.id}`} key={project.id} >
+                <Card  {...project} effect="hover" />   
                 </Link>
             )
         })}
