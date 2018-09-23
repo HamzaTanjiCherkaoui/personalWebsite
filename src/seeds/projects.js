@@ -1,6 +1,6 @@
 const projects = [
     {
-        id:0,
+        id:1,
         title: "Shortcuts.io",
         subTitle: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
         logoColor:"red",
@@ -14,7 +14,7 @@ const projects = [
             }
         ]
     }, {
-        id:1,
+        id:2,
         title: "cuisine.ma",
         subTitle: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
         logoColor:"yellow",
@@ -28,7 +28,7 @@ const projects = [
             }
         ]
     }, {
-        id:2,
+        id:23,
         title: "Reprise App",
         subTitle: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
         logoColor:"blue",
