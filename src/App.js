@@ -12,7 +12,7 @@ class App extends Component {
       <React.Fragment >
         <div className="wrapper">
         <Route exact path={process.env.PUBLIC_URL+"/"} component={Home}/>
-        <Route exact path={process.env.PUBLIC_URL+"/projectDetails/:topicId"} component={ProjectDetails}/>
+        <Route exact path={process.env.PUBLIC_URL+"/projectDetails/:projectId"} component={ProjectDetails}/>
                   </div>
                   <div className="footer">
                   Copyrights - {(new Date()).getFullYear() }
