@@ -5,11 +5,10 @@ import ProjectDetails from './containers/projectDetails/ProjectDetails';
 import {BrowserRouter,  Route,  } from 'react-router-dom';
 class App extends Component {
   render() {
-    
+console.log(process.env.PUBLIC_URL);
     return (
-      <BrowserRouter >
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div className="wrapper">
-        <Home/>
         <Route exact path="/" component={Home}/>
         <Route exact path="/projectDetails/:topicId" component={ProjectDetails}/>
                   </div>

@@ -1,7 +1,7 @@
 {
   "name": "personal",
   "version": "0.2.0",
-  "homepage": "http://hamzatanjicherkaoui.github.io/personalWebsite",
+  "homepage": "http://hamzatanjicherkaoui.github.io/personalWebsite/",
   "private": true,
   "dependencies": {
     "react": "^16.5.2",
