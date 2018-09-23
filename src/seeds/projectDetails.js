@@ -12,6 +12,6 @@ const projectDetailsAPI = {
 
 }],
 all :function() { return this.projectsDetails },
-get : function(id) {return this.projectsDetails.find(p => p.id === id)}
+get : function(id) {return this.projectsDetails.find(p => p.id == id)}
 }
 export default projectDetailsAPI;

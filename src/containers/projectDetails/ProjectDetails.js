@@ -11,8 +11,10 @@ class ProjectDetails extends Component {
 
     render() {
         const {match} = this.props;
-        const projectId =match.params.topicId;
+        const projectId =match.params.projectId;
+        
         const projectDetails = API.get(projectId);
+        
         if(!projectDetails)
         return(
             <React.Fragment> project not found </React.Fragment>
@@ -25,7 +27,7 @@ class ProjectDetails extends Component {
         <h2>main idea / inspiration </h2>
         <ul className="no-padding">
             <li className="card">        
-                    <div className="main-idea" v dangerouslySetInnerHTML={{ __html: projectDetails.idea }}>
+                    <div className="main-idea" dangerouslySetInnerHTML={{ __html: projectDetails.idea }}>
                         
                         </div>
                     </li>
