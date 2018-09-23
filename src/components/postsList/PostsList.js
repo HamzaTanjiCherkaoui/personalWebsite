@@ -6,7 +6,7 @@ const PostsList = ({posts}) => {
     return (
         <ul className="blog">
               {posts.map(post => {
-                 return ( <PostsListItem {...post} />)
+                 return ( <PostsListItem key={post.id} {...post} />)
               })}  
               </ul>
     )

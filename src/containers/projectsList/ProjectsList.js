@@ -7,7 +7,7 @@ export default class ProjectsList extends Component {
       <React.Fragment>
         {projects.map(project => {
             return(
-                <Card  {...project} effect="hover" />   
+                <Card  key={project.id}{...project} effect="hover" />   
             )
         })}
       </React.Fragment>

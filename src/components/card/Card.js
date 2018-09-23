@@ -14,7 +14,7 @@ const Card = ({title, subTitle, logoColor, image, effect, tags, onClick}) => {
                         <div className="description">{subTitle}</div>
                         <div className="tags">
                             {tags.map(tag=>{
-                                return <Tag label={tag.label} color ={tag.color}/>
+                                return <Tag key={tag.label} label={tag.label} color ={tag.color}/>
                             })}
                         </div>
                         <div>
