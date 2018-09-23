@@ -28,7 +28,6 @@ class ProjectDetails extends Component {
         <ul className="no-padding">
             <li className="card">        
                     <div className="main-idea" dangerouslySetInnerHTML={{ __html: projectDetails.idea }}>
-                        
                         </div>
                     </li>
         </ul>
