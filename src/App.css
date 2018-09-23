@@ -201,3 +201,7 @@ a {
 .brand span, .brand i  {
 	margin-left : 5px;
 }
+.main-idea {
+	padding: 20px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

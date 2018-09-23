@@ -6,8 +6,11 @@ import PostsList from '../../components/postsList/PostsList';
 import posts from '../../seeds/posts';
 
 import ProjectsList from '../../containers/projectsList/ProjectsList';
+import projectDetails from '../../seeds/projectDetails';
+import ProjectIssues from '../../containers/projectIssues/ProjectIssues';
 
 class ProjectDetails extends Component {
+     
 
     render() {
         return(
@@ -16,20 +19,17 @@ class ProjectDetails extends Component {
       <div className="main">
         <div className="section">
         <h2>main idea / inspiration </h2>
-        <ul class="no-padding">
-            <li class="card">        
-                    <div class="details">
-                        <h1>Lorem ipsum dolor.</h1>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, hic.
-                        <h1>Lorem ipsum dolor.</h1>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati fuga qui unde, magnam suscipit fugit, totam quasi vitae repellendus molestiae nulla similique in illum. Debitis nisi vel, ab. Laborum, earum?
+        <ul className="no-padding">
+            <li className="card">        
+                    <div class="main-idea">
+                        {projectDetails.idea}
                         </div>
                     </li>
         </ul>
         </div>
         <div className="section">
         <h2>open issues</h2>
-          
+          <ProjectIssues/>
         </div>
         <div className="section">
         <h2>Ressources and Articles </h2>
@@ -56,8 +56,8 @@ class ProjectDetails extends Component {
     
             additionalDetails= {
                 <React.Fragment>
-                <span class="green-color">Live</span>
-            <span> <a href="#"><i class="repo fab fa-github"></i></a></span>
+                <span className="green-color">Live</span>
+            <span> <a href="#"><i className="repo fab fa-github"></i></a></span>
             </React.Fragment>
          }/>
         )
