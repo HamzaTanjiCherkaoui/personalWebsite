@@ -23,7 +23,7 @@ class Home extends Component {
         <div className="section">
           <h2>Playground / Blog</h2>
           <PostsList posts={posts} />
-        </div>
+        </div>  
         <div className="section">
           <h2>Resume</h2>
           <ul className="no-padding">
