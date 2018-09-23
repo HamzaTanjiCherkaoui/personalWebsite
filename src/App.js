@@ -5,14 +5,14 @@ import ProjectDetails from './containers/projectDetails/ProjectDetails';
 import {BrowserRouter,  Route,  } from 'react-router-dom';
 class App extends Component {
   render() {
-console.log(process.env.PUBLIC_URL);
+
     return (
 
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter>
       <React.Fragment >
         <div className="wrapper">
-        <Route exact path="/" component={Home}/>
-        <Route exact path="/projectDetails/:topicId" component={ProjectDetails}/>
+        <Route exact path={process.env.PUBLIC_URL+"/"} component={Home}/>
+        <Route exact path={process.env.PUBLIC_URL+"/projectDetails/:topicId"} component={ProjectDetails}/>
                   </div>
                   <div className="footer">
                   Copyrights - {(new Date()).getFullYear() }
