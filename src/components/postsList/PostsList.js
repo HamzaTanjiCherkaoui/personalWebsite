@@ -7,7 +7,7 @@ import {
   
 const PostsList = ({posts,history}) => {
     const onReadMore = (post)=> {
-        history.push('/post/'+post.id);
+        history.push(process.env.PUBLIC_URL+'/post/'+post.id);
     }
     return (
         <ul className="blog">
