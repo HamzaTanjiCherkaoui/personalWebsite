@@ -12,14 +12,14 @@ const Header = ({rightNav ,logo,logoColor,title, subTitle, additionalDetails}) =
             <div className="brand">
                 {logo && <img src={logo} className="logo" alt="logo"/>}
                 {logoColor && <div className={`image ${logoColor}`}></div>}
-                <h1>
+                {title && <h1>
                     {title}
                     <span className="white">
                         |</span>
                     <span className="light">{subTitle}
                         {additionalDetails}
                     </span>
-                </h1>
+                </h1>}
 
             </div>
         </React.Fragment>

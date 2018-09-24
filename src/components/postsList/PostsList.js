@@ -1,10 +1,13 @@
 import React from 'react';
 import './PostsList.css';
 import PostsListItem from '../../components/postsListItem/PostsListItem';
-
-const PostsList = ({posts}) => {
+import {
+    withRouter
+  } from 'react-router-dom'
+  
+const PostsList = ({posts,history}) => {
     const onReadMore = (post)=> {
-        console.log("read more"+post.id);
+        history.push('/post/'+post.id);
     }
     return (
         <ul className="blog">
@@ -15,4 +18,4 @@ const PostsList = ({posts}) => {
     )
 }
 
-export default PostsList;
+export default withRouter(PostsList);
